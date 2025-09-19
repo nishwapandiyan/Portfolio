@@ -321,17 +321,17 @@ section {
     margin-right: -100px;
     display: inline-block;
 }
-.home-img::after {
+/* .home-img::after {
   content: "";
   position: absolute;
   bottom: -24px;
   left: 80rem;
   width: 45%;
   height: 30%; /* adjust how tall the gradient is */
-  background: linear-gradient(to top, var(--main-color), transparent);
-  z-index: 1; /* ensures gradient stays behind the image */
+  /* background: linear-gradient(to top, var(--main-color), transparent);
+  z-index: 1; ensures gradient stays behind the image
 
-}
+}  */
 span {
     color: var(--main-color);
 }
@@ -815,10 +815,10 @@ background: rgba(0,0,0,.8);
         top:58px;
     }
 
-    .home-img::after{
+    /* .home-img::after{
         content:"";
         margin-bottom:40px;
-    }
+    } */
     .about .about-img img{
     height:450px;
     width:350px;
@@ -832,9 +832,9 @@ background: rgba(0,0,0,.8);
     html{
         font-size: 50%;
     }
-    .home-img::after{
+    /* .home-img::after{
         background: none;
-    }
+    } */
      .home .profession-box .profession:nth-child(1)  {
     margin-left:2px;
 }
@@ -897,11 +897,11 @@ background: rgba(0,0,0,.8);
     margin-left:5em;
     margin-top: 10px;
 }
-.home-img::after{
+/* .home-img::after{
     width:40%;
     left:68rem;
     bottom:-40px;
-}
+} */
 }
 
 @media (max-width:768px){
@@ -920,9 +920,9 @@ background: rgba(0,0,0,.8);
         margin-bottom: .1rem;
         
     }
-    .home-img::after{
+    /* .home-img::after{
         width:0%;
-    }
+    } */
     .content-wrapper{
         margin-left: -70px;
         padding:0 35px 0 35px;
@@ -1166,10 +1166,10 @@ background: rgba(0,0,0,.8);
     #dark-mode{
         right:6rem;
     }
-    .home-img::after{
+    /* .home-img::after{
         content:"";
         width:0%;
-    }
+    } */
    .content-wrapper{
     margin-left: -70px;
     padding:0 20px 0 20px;
@@ -1216,10 +1216,10 @@ background: rgba(0,0,0,.8);
         width:80vw;
         height:50vh
     }
-    .home-img::after{
+    /* .home-img::after{
         content:"";
         width:0%;
-    }
+    } */
 
     .footer{
         flex-direction: column-reverse;
@@ -1272,9 +1272,9 @@ background: rgba(0,0,0,.8);
     html{
         font-size: 43%;
     }
-    .home-img::after{
+    /* .home-img::after{
         width:0%;
-    }
+    } */
 .home .profession-box .profession:nth-child(1)  {
     margin-right: 15px;
     margin-top: -30px;
