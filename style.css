@@ -1219,7 +1219,7 @@ background: rgba(0,0,0,.8);
     }
 }
 
-@media (min-width:365px) and (max-width:449px){
+@media (max-width:365px){
     .about .about-img img{
         width:80vw;
         height:50vh
@@ -1231,10 +1231,10 @@ background: rgba(0,0,0,.8);
         top:370px;
     }
  .home .profession-container{
-        top:270px;
+        top:470px;
     }
     .home .profession-container .overlay{
-        top:450px;
+        top:460px;
     }
     .home .profession-box .profession:nth-child(1)  {
     margin-right: 10px;
@@ -1279,7 +1279,7 @@ background: rgba(0,0,0,.8);
     }
 }
 
-@media(min-width:320px) and (max-width:364px){
+@media(max-width:320px){
     html{
         font-size: 45%;
     }
@@ -1315,7 +1315,7 @@ background: rgba(0,0,0,.8);
         top:380px;
     }
     .home .profession-container{
-        top:269px;
+        top:490px;
     }
     .content-wrapper{
         margin-left: -70px;
