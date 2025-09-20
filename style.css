@@ -1219,15 +1219,11 @@ background: rgba(0,0,0,.8);
     }
 }
 
-@media (max-width:365px){
+@media (min-width:365px) and (max-width:449px){
     .about .about-img img{
         width:80vw;
         height:50vh
     }
-    /* .home-img::after{
-        content:"";
-        width:0%;
-    } */
 .home .home-content{
     margin-top:40px;
 }
@@ -1236,14 +1232,6 @@ background: rgba(0,0,0,.8);
     }
  .home .profession-container{
         top:270px;
-    }
-    .footer{
-        flex-direction: column-reverse;
-    }
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
-        margin-right: 80px;
     }
     .home .profession-container .overlay{
         top:450px;
@@ -1264,7 +1252,7 @@ background: rgba(0,0,0,.8);
 .home .profession-box .profession:nth-child(4){
     margin-top:10px;
     margin-right:100px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .home .profession-box .profession:nth-child(3){
     margin-top:30px;
@@ -1282,29 +1270,36 @@ background: rgba(0,0,0,.8);
     .about-content{
         margin-bottom: 20px;
     }
+     .footer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer p{
+        margin:1rem auto 0 auto;
+    }
 }
 
-@media(max-width:320px){
+@media(min-width:320px) and (max-width:364px){
     html{
-        font-size: 46%;
+        font-size: 45%;
     }
     /* .home-img::after{
         width:0%;
     } */
 .home .profession-box .profession:nth-child(1)  {
-    margin-right: 15px;
-    margin-top: -30px;
-    margin-left:-60px;
+    margin-right: 10vw;
+    margin-top: -5vw;
+    margin-left:-10vw;
 }
 
 .home .profession-box .profession:nth-child(2) {
 
-    margin-bottom:80px;
-    margin-left: 35px;
+    margin-bottom:25vw;
+    margin-left: 10vw;
 }
 .home .profession-box .profession:nth-child(4){
-    margin-top:30px;
-    margin-right:140px;
+    margin-top:10vw;
+    margin-right:40vw;
 }
 .home .profession-box .profession:nth-child(3){
     margin-top:60px;
@@ -1320,10 +1315,7 @@ background: rgba(0,0,0,.8);
         top:380px;
     }
     .home .profession-container{
-        top:500px;
-    }
-    .home .profession-container .overlay{
-        top:px;
+        top:269px;
     }
     .content-wrapper{
         margin-left: -70px;
@@ -1332,8 +1324,12 @@ background: rgba(0,0,0,.8);
     .about-content{
         margin-bottom: 20px;
     }
-    .home .home-content{
-        margin-top:-40px;
+     .footer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer p{
+        margin:1rem auto 0 auto;
     }
 }
 
@@ -1391,41 +1387,6 @@ body.dark .footer-iconTop i {
 .about .about-content h3{
     margin-bottom:40px;
 }
-
-/* For screens up to 1440px */
-
-
-/*servicce boxxxxxx*/
-
-/* .service-box{
-    width:80%;
-    position:relative;
-    transition: all 0.5s ease;
-}
-
-.content{
-    max-height:155px;
-    overflow:hidden;
-    transition: max-height 0.5s ease;
-}
-.content.expand{
-    max-height:200px;
-    overflow-y: auto;
-}
-
-.content::-webkit-scrollbar {
-    width: 5px;
-}
-
-.content::-webkit-scrollbar-track {
-    background: var(--bg-color);
-    border-radius: 10px;
-}
-
-.content::-webkit-scrollbar-thumb {
-    background: var(--main-color);
-    border-radius: 10px;
-} */
 
 .service-box {
     width: 80%;
