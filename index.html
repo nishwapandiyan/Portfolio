@@ -2,24 +2,32 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags for proper rendering and responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style3.css">
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <!-- Swiper CSS for slider functionality -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
 
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header class="header">
+        <!-- Logo -->
         <a href="#" class="logo">Portfolio.</a>
 
+        <!-- Navigation Bar Links -->
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -27,31 +35,36 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <!-- Dark Mode Toggle Icon -->
         <i class="fa-regular fa-moon" id="dark-mode"></i>
 
+        <!-- Hamburger Menu Icon for mobile view -->
         <div><i class="fa-solid fa-bars" id="menu-icon"></i></div>
-
     </header>
 
+    <!-- ================= HOME SECTION ================= -->
     <section class="home" id="home">
+        <!-- Home Text Content -->
         <div class="home-content">
             <h3>Hello, I am</h3>
             <h1>Nishwa Pandiyan</h1>
             <p>Currently Pursuing bachelor's Degree in <br> V S B Engineeing College at Karur</p>
 
+            <!-- Social Media Links -->
             <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=61567349444756"><i id="logo"
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/nishwa_pandiyan_/"><i id="logo"
-                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61567349444756"><i id="logo"class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nishwa_pandiyan_/"><i id="logo"class="fa-brands fa-instagram"></i></a>
                 <a href="https://x.com/NishwaPandiyan"><i id="logo" class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://github.com/Nishwa2006"><i id="logo" class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nishwapandiyan/"><i id="logo"
-                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/nishwapandiyan/"><i id="logo"class="fa-brands fa-linkedin"></i></a>
             </div>
 
+            <!-- Download CV Button -->
             <a href="Nishwa .R.P.pdf" download="Nishwa Resume.pdf" class="btn">Download CV</a>
         </div>
+
+        <!-- Professions with icons -->
         <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0">
@@ -74,25 +87,33 @@
                     <h3>video Editor</h3>
                 </div>
 
+                <!-- Decorative Circle -->
                 <div class="circle"></div>
             </div>
 
+            <!-- Overlay for profession container effect-->
             <div class="overlay"></div>
         </div>
 
-        <div class="home-img">
+        <!-- Home Image -->
+            <div class="home-img">
             <img src="left.png" height="600px" width="500px">
         </div>
     </section>
 
+    <!-- ================= ABOUT SECTION ================= -->
     <section class="about" id="about">
+        <!-- About Image -->
         <div class="about-img">
             <img src="right.png" alt="" height="550px" width="300px">
         </div>
 
+        <!-- About Text Content -->
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>ELECTRONICS & COMMUNICATION ENGINEERING STUDENT</h3>
+
+            <!-- Content Wrapper for Read More functionality -->
             <div class="content-wrapper">
                 <p>
                     Hi! I’m R.P.Nishwa, a passionate ECE student who enjoys learning, experimenting, and building
@@ -121,14 +142,18 @@
                 </p>
                 </p>
             </div>
-            <a href="#" class="btn" id="readd-more-btn">Read More</a>
+
+            <!-- Read More Button -->
+            <a href="#" class="btn" id="read-more-btn">Read More</a>
         </div>
     </section>
 
+    <!-- ================= SERVICES SECTION ================= -->
     <section class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
+            <!-- Web Development Service -->
             <div class="service-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
@@ -151,12 +176,12 @@
                 <a href="#" class="btn">Read More</a>
             </div>
 
+            <!-- Photo Editing Service -->
             <div class="service-box">
                 <i class="fa-solid fa-paintbrush"></i>
                 <h3>Photo Editing</h3>
                 <div class="content">
                     <p>
-                        
                         I provide high-quality photo editing services to enhance, retouch, and transform
                         your images. From basic corrections like brightness and color adjustments to advanced
                         retouching,
@@ -174,6 +199,7 @@
                 <a href="#" class="btn">Read More</a>
             </div>
 
+            <!-- Problem Solving Service -->
             <div class="service-box">
                 <i class="fa-solid fa-chart-simple"></i>
                 <h3>Problem Solving</h3>
@@ -187,7 +213,8 @@
                     <p>
                         With hands-on experience in Java, I actively practice algorithms to improve
                         efficiency and optimize performance. Alongside programming logic, I also apply my skills in
-                        HTML, CSS, and JavaScript to build functional, interactive projects that reflect both problem-solving
+                        HTML, CSS, and JavaScript to build functional, interactive projects that reflect both
+                        problem-solving
                         ability and creativity.
 
                         <br>
@@ -201,7 +228,7 @@
         </div>
     </section>
 
-
+    <!-- ================= PORTFOLIO SECTION ================= -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
 
@@ -209,6 +236,7 @@
             <div class="portfolio-box">
                 <img src="circuit.jpg" width="400px" height="350px" alt="">
 
+                <!-- Portfolio Overlay -->
                 <div class="portfolio-layer">
                     <h4>ENERGY PRODUCTION BY THERMOELECTRIC GENERATOR</h4>
                     <p>"Massive Production Of Electicity by TEG"
@@ -216,178 +244,116 @@
                     <a href="project.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                 </div>
             </div>
-
-       <!--     <div class="portfolio-box">
-                <img src="StockCake-Circuit board assembly_1754770485.jpg" width="400px" height="350px" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto, deleniti reiciendis
-                        est nemo iure vero officia consequatur ratione corrupti?</p>
-                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                </div>
-            </div>
-
-
-            <div class="portfolio-box">
-                <img src="StockCake-Circuit board assembly_1754770485.jpg" width="400px" height="350px" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto, deleniti reiciendis
-                        est nemo iure vero officia consequatur ratione corrupti?</p>
-                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="StockCake-Circuit board assembly_1754770485.jpg" width="400px" height="350px" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto, deleniti reiciendis
-                        est nemo iure vero officia consequatur ratione corrupti?</p>
-                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="StockCake-Circuit board assembly_1754770485.jpg" width="400px" height="350px" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto, deleniti reiciendis
-                        est nemo iure vero officia consequatur ratione corrupti?</p>
-                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="StockCake-Circuit board assembly_1754770485.jpg" width="400px" height="350px" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto, deleniti reiciendis
-                        est nemo iure vero officia consequatur ratione corrupti?</p>
-                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                </div>
-            </div>-->
         </div>
     </section>
+
+    <!-- ================= TESTIMONIAL / TECH SKILLS ================= -->
     <div class="testimonial-container">
         <h2 class="heading">Technical <span>Skills</span></h2>
 
         <div class="testimonial-wrapper">
             <div class="testimonial-box mySwiper">
                 <div class="testimonial-content swiper-wrapper">
+                    <!-- Skill Slides -->
                     <div class="testimonial-slide swiper-slide">
                         <img src="html.png" height="400px" width="400px" alt="">
                         <h3>HTML</h3>
-                        <p>💻 “I have a basic understanding of HTML and have used it to create and practice building websites. Through these projects, I gained practical experience in structuring web pages and improving my foundational web development skills.
-                            with this skills I also developing my programming knowledge in HTML based projects”!
-
+                        <p>💻 “I have a basic understanding of HTML and have used it to create and practice building
+                            websites. Through these projects, I gained practical experience in structuring web pages and
+                            improving my foundational web development skills.
+                            with this skills I also developing my programming knowledge in HTML based projects”! 
                         </p>
                     </div>
+
                     <div class="testimonial-slide swiper-slide">
                         <img src="css.png" height="400px" width="400px" alt="">
                         <h3>CSS</h3>
-                        <p>💻 “I have a basic understanding of HTML and CSS, which I have used to create and practice building websites. Through these projects, I gained practical experience in structuring web pages and styling them to improve both functionality and design.”!
-
+                        <p>💻 “I have a basic understanding of HTML and CSS, which I have used to create and practice
+                            building websites. Through these projects, I gained practical experience in structuring web
+                            pages and styling them to improve both functionality and design.”!
                         </p>
                     </div>
 
                     <div class="testimonial-slide swiper-slide">
                         <img src="js.png" height="400px" width="400px" alt="">
                         <h3>JAVASCRIPT</h3>
-                        <p>💻 “I have a basic understanding of JavaScript and have practiced it by adding interactivity to websites. This helped me strengthen my problem-solving skills and understand how logic works in web development.”!
-
+                        <p>💻 “I have a basic understanding of JavaScript and have practiced it by adding interactivity
+                            to websites. This helped me strengthen my problem-solving skills and understand how logic
+                            works in web development.”!
                         </p>
                     </div>
 
-                     <div class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide">
                         <img src="java.png" height="400px" width="400px" alt="">
                         <h3>JAVA</h3>
-                        <p>💻 “I have a basic understanding of Java and have practiced implementing fundamental concepts such as loops, arrays, and object-oriented programming through small projects and exercises.”!
-
+                        <p>💻 “I have a basic understanding of Java and have practiced implementing fundamental concepts
+                            such as loops, arrays, and object-oriented programming through small projects and
+                            exercises.”!
                         </p>
                     </div>
 
-                     <div class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide">
                         <img src="python.png" height="400px" width="400px" alt="">
                         <h3>PYTHON</h3>
-                        <p>💻 “I know the basics of Python and have used it to practice problem-solving and simple programs, which helped me strengthen my logical thinking.”!
-
+                        <p>💻 “I know the basics of Python and have used it to practice problem-solving and simple
+                            programs, which helped me strengthen my logical thinking.”!
                         </p>
                     </div>
 
-                     <div class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide">
                         <img src="sql.png" height="400px" width="400px" alt="">
                         <h3>SQL</h3>
-                        <p>💻 “I have a basic knowledge of SQL and have practiced writing simple queries to retrieve, insert, and manage data in databases.”!
-                            
+                        <p>💻 “I have a basic knowledge of SQL and have practiced writing simple queries to retrieve,
+                            insert, and manage data in databases.”!
                         </p>
                     </div>
                 </div>
+
+                <!-- Swiper Navigation -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
+
+    <!-- ================= CONTACT SECTION ================= -->
     <section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  
-  <form id="contactForm" method="post">
-    <div class="input-box">
-      <input type="text" id="name" placeholder="Full Name" required>
-      <input type="email" id="email" placeholder="Email Address" required>
-    </div>
+        <h2 class="heading">Contact <span>Me</span></h2>
 
-    <div class="input-box">
-      <input type="tel" id="phone" placeholder="Mobile Number" required>
-      <input type="text" id="subject" placeholder="Email Subject" required>
-    </div>
+        <!-- Contact Form -->
+        <form id="contactForm" method="post">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
 
-    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <div class="input-box">
+                <input type="tel" id="phone" placeholder="Mobile Number" required>
+                <input type="text" id="subject" placeholder="Email Subject" required>
+            </div>
 
-    <input type="submit" value="Send Message" class="btn">
-  </form>
-</section>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
 
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy;2025 by Nishwa | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
+            <!-- Scroll to top button -->
             <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
-
         </div>
     </footer>
 
-    <!-- scrolll-->
-
+    <!-- ================= SCRIPTS ================= -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
     <script src="script.js"></script>
 </body>
 
 </html>
-
-
-<!-- <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="3d34b40d-1063-40b1-aa52-155e04ec4b0e">
-            
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email Address">
-            </div>
-             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>-->
