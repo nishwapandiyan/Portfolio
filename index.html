@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for proper rendering and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nishwa's_portfolio</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CSS for slider functionality -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">Portfolio.</a>
+
+        <!-- Navigation Bar Links -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Dark Mode Toggle Icon -->
+        <i class="fa-regular fa-moon" id="dark-mode"></i>
+
+        <!-- Hamburger Menu Icon for mobile view -->
+        <div><i class="fa-solid fa-bars" id="menu-icon"></i></div>
+    </header>
+
+    <!-- ================= HOME SECTION ================= -->
+    <section class="home" id="home">
+        <!-- Home Text Content -->
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Nishwa Pandiyan</h1>
+            <p>Currently Pursuing bachelor's Degree in <br> V.S.B Engineeing College at Karur</p>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61567349444756"><i id="logo"class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nishwa_pandiyan_/"><i id="logo"class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/NishwaPandiyan"><i id="logo" class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/nishwapandiyan"><i id="logo" class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nishwapandiyan/"><i id="logo"class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <!-- Download CV Button -->
+            <a href="https://drive.google.com/drive/folders/1SPJT13k2-53XuJ5I30DgVgBv4K_XZcF9?usp=drive_link" class="btn">Download CV</a>
+        </div>
+
+        <!-- Professions with icons -->
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Developer</h3>
+                </div>
+
+                <div class="profession" style="--i:1">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h3>Programmer</h3>
+                </div>
+
+                <div class="profession" style="--i:2">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>Web Designer</h3>
+                </div>
+
+                <div class="profession" style="--i:3">
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Video Editor</h3>
+                </div>
+
+                <!-- Decorative Circle -->
+                <div class="circle"></div>
+            </div>
+
+            <!-- Overlay for profession container effect-->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Home Image -->
+            <div class="home-img">
+            <img src="left.png" width="" >
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about" id="about">
+        <!-- About Image -->
+        <div class="about-img">
+            <img src="right.png" alt="" height="" width="">
+        </div>
+
+        <!-- About Text Content -->
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>ELECTRONICS & COMMUNICATION ENGINEERING STUDENT</h3>
+
+            <!-- Content Wrapper for Read More functionality -->
+            <div class="content-wrapper">
+                <p>
+Hi, I'm Nishwa R P, an Electronics and Communication Engineering student at VSB Engineering College, Karur, with a CGPA of 8.3. I enjoy building things with code — from front-end web pages to database-driven Python applications.                   <br>
+                <p class="more-text">
+                  I'm comfortable working with Python, Java, JavaScript, HTML, CSS, and MySQL, and I've built projects like a Student Management System and a Library Management System using Python and MySQL, along with a simple student dashboard using HTML, CSS, and JavaScript. I also have a basic understanding of AI agent concepts through Kaggle's learning program.
+                    <br>
+                    <br>
+I hold certifications from IBM, Meta, GUVI, and Infosys Springboard, and I'm continuously learning and improving my skills in software development. I'm currently looking for entry-level opportunities where I can contribute, grow, and work alongside experienced professionals in the tech industry.
+When I'm not coding, I enjoy sharing what I learn with peers through study sessions and seminars.         </p>
+                </p>
+            </div>
+
+            <!-- Read More Button -->
+            <a href="#" class="btn" id="read-more-btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <!-- Web Development Service -->
+            <div class="service-box">
+                <i class="fa-brands fa-connectdevelop"></i>
+                <h3>Python Development</h3>
+                <div class="content">
+                    <p>
+                       I have hands-on experience writing Python scripts and building CLI-based applications from scratch. I have developed projects like a Student Management System and a Library Management System entirely in Python, where I structured the code into separate modules for database connection, authentication, menu navigation, and core operations. Through these projects I have practised writing clean, readable, and modular Python code that handles real application logic independently.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        Python has been my primary programming language throughout my learning journey, and I have used it to solve practical problems beyond just writing basic programs. I am comfortable with concepts like functions, loops, conditionals, file handling, and working with external libraries such as MySQL Connector and Tkinter. Every project I have built in Python has pushed me to think about how code is organised, how data flows through an application, and how to make programs that actually work in a real use case.
+                    </p>
+                </div>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <!-- Photo Editing Service -->
+            <div class="service-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>MySQL & Database </h3>
+                <div class="content">
+                    <p>
+                        I am comfortable working with MySQL to design and manage databases for real applications. I have created tables, written queries, and performed CRUD operations — adding, viewing, updating, and deleting records — while applying core DBMS concepts like primary keys, foreign keys, and data integrity. I have also worked with MySQL Connector in Python to link application logic directly with the database, giving me practical experience in building database-driven programs end to end.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        Understanding databases has been one of the most valuable parts of my learning so far because almost every real-world application depends on structured data. Working on my projects taught me how to think about data — how to organise it into tables, how to retrieve it efficiently using queries, and how to make sure it stays accurate and consistent. I enjoy the logical side of database design and I am continuously practising my SQL skills to get more confident with complex queries and real scenarios.
+                    </p>
+                </div>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+                        <div class="service-box">
+                <i class="fa-solid fa-window-restore"></i>
+                <h3>Desktop GUI with Tkinter </h3>
+                <div class="content">
+                    <p>
+                        I have explored building desktop applications using Python's Tkinter library, where I have created simple graphical user interfaces with buttons, input fields, labels, and basic navigation. Tkinter has helped me understand how GUI applications are structured and how user interactions are handled in a desktop environment, adding a practical dimension to my Python development experience.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                     Working with Tkinter showed me a completely different side of programming — one where the user interacts through a visual interface rather than a command line. I learned how to design window layouts, connect UI components to functions, and handle user input through forms and buttons. It gave me an appreciation for how much thought goes into making an application feel easy and natural to use, and it strengthened my overall confidence in Python by applying it in a new and practical context.
+                    </p>
+                </div>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <!-- Problem Solving Service -->
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Front-End Web Development</h3>
+                <div class="content">
+                    <p>
+                        I have built web interfaces using HTML, CSS, and JavaScript, including a student dashboard with a login page and a structured data display layout. Through this I have practised DOM manipulation, event handling, and designing clean, user-friendly page layouts. While I am still developing my front-end skills further, I have a solid understanding of how web pages are structured, styled, and made interactive.
+                    </p>
+                    <br>
+                    <p>
+                        Front-end development gave me my first real experience of seeing code turn into something visual and interactive on a screen. Building the student dashboard helped me understand how HTML provides structure, CSS controls appearance, and JavaScript brings the page to life with dynamic behaviour. I enjoy the creative and problem-solving aspects of front-end work — figuring out how to lay out a page cleanly, make it respond to user actions, and present information in a way that is easy to understand.
+                    </p>
+                </div>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTFOLIO SECTION ================= -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="TEG.png" width="" height="250px" alt="">
+
+                <!-- Portfolio Overlay -->
+                <div class="portfolio-layer">
+                    <h4>ENERGY PRODUCTION BY THERMOELECTRIC GENERATOR</h4>
+                    <p>"Massive Production Of Electicity by TEG"
+                    </p>
+                    <a href="project.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+              <div class="portfolio-box">
+                <img src="studentweb.png" width="" height="250px" alt="">
+
+                <!-- Portfolio Overlay -->
+                <div class="portfolio-layer">
+                    <h4>SMART STUDENT MONITORING SYSTEM</h4>
+                    <p>"Simple Dashboard of Student Details"
+                    </p>
+                    <a href="https://github.com/nishwapandiyan/Smart-Student-Monitoring"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <!-- <div class="portfolio-box">
+                <img src="circuit.jpg" width="" height="250px" alt="">
+
+                
+                <div class="portfolio-layer">
+                    <h4>ENERGY PRODUCTION BY THERMOELECTRIC GENERATOR</h4>
+                    <p>"Massive Production Of Electicity by TEG"
+                    </p>
+                    <a href="project.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div> -->
+
+            <!-- <div class="portfolio-box">
+                <img src="circuit.jpg" width="" height="250px" alt="">
+
+                
+                <div class="portfolio-layer">
+                    <h4>ENERGY PRODUCTION BY THERMOELECTRIC GENERATOR</h4>
+                    <p>"Massive Production Of Electicity by TEG"
+                    </p>
+                    <a href="project.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div> -->
+
+            <div class="portfolio-box">
+                <img src="Python Student.png" width="" height="250px" alt="">
+
+                <!-- Portfolio Overlay -->
+                <div class="portfolio-layer">
+                    <h4>STUDENT MANAGEMENT SYSTEM</h4>
+                    <p>"Student's Database and Details"</p>
+                    <a href="https://github.com/nishwapandiyan/student-management-python"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+              <div class="portfolio-box">
+                <img src="Library.png" width="" height="250px" alt="">
+
+                <!-- Portfolio Overlay -->
+                <div class="portfolio-layer">
+                    <h4>LIBRARY MANAGEMENT SYSTEM</h4>
+                    <p>"Library Database About Books and Books's Availability"
+                    </p>
+                    <a href="https://github.com/nishwapandiyan/library-management-python"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL / TECH SKILLS ================= -->
+    <div class="testimonial-container">
+        <h2 class="heading">Technical <span>Skills</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <!-- Skill Slides -->
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="html.png" height="400px" width="400px" alt="">
+                        <h3>HTML</h3>
+                        <p>💻 “I have a basic understanding of HTML and have used it to create and practice building
+                            websites. Through these projects, I gained practical experience in structuring web pages and
+                            improving my foundational web development skills.
+                            with this skills I also developing my programming knowledge in HTML based projects”! 
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="css.png" height="400px" width="400px" alt="">
+                        <h3>CSS</h3>
+                        <p>💻 “I have a basic understanding of HTML and CSS, which I have used to create and practice
+                            building websites. Through these projects, I gained practical experience in structuring web
+                            pages and styling them to improve both functionality and design.”!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="js.png" height="400px" width="400px" alt="">
+                        <h3>JAVASCRIPT</h3>
+                        <p>💻 “I have a basic understanding of JavaScript and have practiced it by adding interactivity
+                            to websites. This helped me strengthen my problem-solving skills and understand how logic
+                            works in web development.”!
+                        </p>
+                    </div>
+
+                                        <div class="testimonial-slide swiper-slide">
+                        <img src="git.svg" height="400px" width="400px" alt="">
+                        <h3>GIT</h3>
+                        <p>💻 “I have a basic understanding of JavaScript and have practiced it by adding interactivity
+                            to websites. This helped me strengthen my problem-solving skills and understand how logic
+                            works in web development.”!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="java.png" height="400px" width="400px" alt="">
+                        <h3>JAVA</h3>
+                        <p>💻 “I have a basic understanding of Java and have practiced implementing fundamental concepts
+                            such as loops, arrays, and object-oriented programming through small projects and
+                            exercises.”!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="python.png" height="400px" width="400px" alt="">
+                        <h3>PYTHON</h3>
+                        <p>💻 “I know the basics of Python and have used it to practice problem-solving and simple
+                            programs, which helped me strengthen my logical thinking.”!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="sql.png" height="400px" width="400px" alt="">
+                        <h3>SQL</h3>
+                        <p>💻 “I have a basic knowledge of SQL and have practiced writing simple queries to retrieve,
+                            insert, and manage data in databases.”!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Swiper Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <!-- Contact Form -->
+        <form id="contactForm" method="post">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" id="phone" placeholder="Mobile Number" required>
+                <input type="text" id="subject" placeholder="Email Subject" required>
+            </div>
+
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy;2025 by Nishwa | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <!-- Scroll to top button -->
+            <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
