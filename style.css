@@ -25,12 +25,14 @@
 
     :root {
         /* --bg-color: #fdfdfd; */
-        --bg-color: #d1ba93;
+        /* --bg-color: #d1ba93; */
+        --bg-color: #E2E8F0;
         --text-color: #333;
              /* --main-color: #850b7d; */
              /* --main-color: #ec5a2d; */
              /* --main-color: #212842; */
-             --main-color: #800020;
+             /* --main-color: #800020; */
+             --main-color: #0F172B;
         --white-color: #fdfdfd;
         --shadow-color: rgba(0, 0, 0, .2);
     }
