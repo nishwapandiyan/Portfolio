@@ -203,8 +203,8 @@
         top:49.9%;
         right:0;
         transform: translateY(-50%);
-        width:688px;
-        height:678px;
+        width:689px;
+        height:680px;
         overflow:hidden;
         pointer-events: none;
     }
@@ -281,10 +281,10 @@
         right: 0;
         width: 0;
         height: 0;
-        border-top: 344px solid var(--main-color);
-        border-right: 344px solid var(--main-color);
-        border-bottom: 344px solid var(--main-color);
-        border-left: 344px solid transparent;
+        border-top: 345px solid var(--main-color);
+        border-right: 345px solid var(--main-color);
+        border-bottom: 345px solid var(--main-color);
+        border-left: 345px solid transparent;
     }
     .home-img img{
         position: absolute;
