@@ -46,7 +46,7 @@ Portfolio-Website/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/portfolio-website.git
+https://nishwapandiyan.github.io/Portfolio/
 ```
 
 ### 2. Open Project Folder
