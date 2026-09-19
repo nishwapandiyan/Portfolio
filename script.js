@@ -1,4 +1,4 @@
-// ======================= MENU ICON NAVBAR ===================================================================================================
+// ======================= MENU ICON NAVBAR =======================
 let menuIcon = document.getElementById("menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -8,7 +8,6 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-// Close navbar when a nav link is clicked
 document.querySelectorAll(".navbar a").forEach(link => {
   link.addEventListener("click", () => {
     menuIcon.classList.add("fa-bars");
@@ -17,58 +16,43 @@ document.querySelectorAll(".navbar a").forEach(link => {
   });
 });
 
-// ======================= ACTIVE NAV LINK ON SCROLL ============================================================================================
+// ======================= ACTIVE NAV LINK ON SCROLL =======================
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
 window.addEventListener("scroll", () => {
   let top = window.scrollY;
-
   sections.forEach(sec => {
     let offset = sec.offsetTop - 150;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
-
     if (top >= offset && top < offset + height) {
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-      });
-      document
-        .querySelector(`header nav a[href*=${id}]`)
-        .classList.add("active");
+      navLinks.forEach(link => link.classList.remove("active"));
+      document.querySelector(`header nav a[href*=${id}]`).classList.add("active");
     }
   });
-
-  // Sticky header
-  let header = document.querySelector(".header");
-  header.classList.toggle("sticky", window.scrollY > 100);
+  document.querySelector(".header").classList.toggle("sticky", window.scrollY > 100);
 });
 
-// ======================= SWIPER ==============================================================================================================
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 50,
-  grabCursor: true,
-  loop:true,
-   autoplay: {
-    delay: 1500,
-    disableOnInteraction: false},
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
+// ======================= SWIPER =======================
+if (typeof Swiper !== "undefined") {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    grabCursor: true,
+    loop: true,
+    autoplay: { delay: 1500, disableOnInteraction: false },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+  });
+}
 
 // ======================= DARK MODE =======================
 const darkModeToggle = document.getElementById("dark-mode");
 const body = document.body;
-
-// Load theme from localStorage
-if (localStorage.getItem("theme") === "dark") {
+let savedTheme;
+try { savedTheme = localStorage.getItem("theme"); } catch {}
+if (savedTheme === "dark") {
   body.classList.add("dark");
   darkModeToggle.classList.remove("fa-moon");
   darkModeToggle.classList.add("fa-sun");
@@ -76,33 +60,27 @@ if (localStorage.getItem("theme") === "dark") {
 
 darkModeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
-
   if (body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
+    try { localStorage.setItem("theme", "dark"); } catch {}
     darkModeToggle.classList.replace("fa-moon", "fa-sun");
   } else {
-    localStorage.setItem("theme", "light");
+    try { localStorage.setItem("theme", "light"); } catch {}
     darkModeToggle.classList.replace("fa-sun", "fa-moon");
   }
 });
 
 // ======================= SCROLL REVEAL =======================
-ScrollReveal({
-  distance: "80px",
-  duration: 1000,
-  delay: 100
-});
-
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(
-  ".home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form",
-  { origin: "bottom" }
-);
-ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
-ScrollReveal().reveal(
-  ".home-content h3, .home-content p, .about-content",
-  { origin: "right" }
-);
+if (typeof ScrollReveal !== "undefined") {
+  ScrollReveal({ distance: "80px", duration: 1000, delay: 100 });
+  ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+  // Keep the portrait anchored to the overlay; do not translate it on reveal.
+  ScrollReveal().reveal(
+    ".services-container, .portfolio-box, .testimonial-wrapper, .contact form",
+    { origin: "bottom" }
+  );
+  ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
+  ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: "right" });
+}
 
 // ======================= ABOUT READ MORE =======================
 const readMoreBtn = document.getElementById("read-more-btn");
