@@ -1178,7 +1178,8 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
 /* Use the available desktop height so the wide book has a fuller page proportion. */
 @media(min-width:1024px){
  .book-shell{padding-top:14px;padding-bottom:12px;gap:14px}
- .book-stage{width:calc(95vw - 80px);height:max(110dvh,70vw);min-height:650px}
+ .book-stage{width:calc(95vw - 180px);height:max(110dvh,70vw);min-height:650px}
+ .book-page .home .profession-container .home-img img{right:-24px}
 }
 .page-corner{position:absolute;bottom:0;width:52px;height:52px;border:0;z-index:80;background:linear-gradient(135deg,transparent 49%,#8884 50%,#fff9 75%,#5555);cursor:grab;touch-action:none}
 .corner-next{right:0;border-radius:0 0 10px 0}.corner-back{left:0;transform:scaleX(-1)}
@@ -1189,6 +1190,14 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
 .turn-fold.reverse{right:auto;left:0;transform-origin:left bottom;rotate:90deg}
 @media(max-width:699px){.book-page .home .profession-container .profession-box{top:290px}.book-page .home .profession-container{min-height:340px}.book-page .home .profession-container .overlay{height:48%}.welcome{font-size:clamp(3.6rem,10vw,6rem)}.cover-art .tech-mark{width:49px;height:49px}.tech-4,.tech-6{left:76%}}
 /* Keep the entire top profession visible throughout the stacked tablet layout. */
+.back-cover .closing-code{position:absolute;inset:0;overflow:hidden;opacity:.16;pointer-events:none;mask-image:linear-gradient(transparent,#000 12%,#000 88%,transparent)}
+.code-track{animation:code-scroll 45s linear infinite;width:max-content;min-width:100%;padding-inline:7%}
+.code-track pre{font-family:Consolas,'Courier New',monospace;font-size:clamp(16px,2vw,30px);line-height:1.65;color:#e2c47c;white-space:pre;margin:0}
+.thank-you{position:relative;z-index:2;font-size:clamp(5rem,9vw,13rem);font-weight:400;letter-spacing:.05em;color:#e2c47c;text-align:center;text-shadow:0 3px 20px #000,0 0 40px #000;background:radial-gradient(ellipse,#000b,transparent 70%);padding:3rem}
+.back-cover:before{display:block;inset:17px;border:1px solid #b99346;opacity:1;z-index:3;box-shadow:inset 0 0 0 5px #000,inset 0 0 0 6px #806329}
+.back-cover[hidden] .code-track{animation-play-state:paused}
+@keyframes code-scroll{to{transform:translateY(-50%)}}
+@media(prefers-reduced-motion:reduce){.code-track{animation:none}}
 @media(max-width:768px){
  .book-page .home .profession-container{min-height:360px}
  .book-page .home .profession-container .profession-box{top:calc(344px * var(--wheel-scale,.65) + 40px)}
