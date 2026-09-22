@@ -54,6 +54,7 @@ wheelWindow.className = 'wheel-window';
 wheel.before(wheelWindow);
 wheelWindow.append(wheel);
 function updateControls() {
+  book.dataset.activePage = pages[position].dataset.page;
   document.querySelector('.header').hidden = ['front','back'].includes(pages[position].dataset.page);
   previous.disabled = targetPosition === 0;
   next.disabled = targetPosition === pages.length - 1;

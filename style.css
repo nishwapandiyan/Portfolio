@@ -1178,7 +1178,7 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
 /* Use the available desktop height so the wide book has a fuller page proportion. */
 @media(min-width:1024px){
  .book-shell{padding-top:14px;padding-bottom:12px;gap:14px}
- .book-stage{width:calc(95vw - 180px);height:max(110dvh,70vw);min-height:650px}
+ .book-stage{width:calc(95vw - 180px)}
  .book-page .home .profession-container .home-img img{right:-24px}
 }
 .page-corner{position:absolute;bottom:0;width:52px;height:52px;border:0;z-index:80;background:linear-gradient(135deg,transparent 49%,#8884 50%,#fff9 75%,#5555);cursor:grab;touch-action:none}
@@ -1203,4 +1203,28 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
  .book-page .home .profession-container .profession-box{top:calc(344px * var(--wheel-scale,.65) + 40px)}
  .wheel-window{position:absolute;inset:0 0 auto;height:250px;overflow:hidden}
  .book-page .home .profession-container .overlay{height:60%}
+}
+/* The outer book always fits the browser; long sections scroll inside the sheet. */
+html,body{height:100%;overflow:hidden}
+body{height:100dvh;min-height:0}
+.book-shell{height:100%;min-height:0;flex:1;padding:20px 3vw 12px;gap:16px;justify-content:flex-start}
+.book-stage{flex:1;min-height:0;height:auto;max-height:none;width:94vw}
+.page-navigation{flex:0 0 24px}
+.cover-page{min-height:100%}
+@media(min-width:1024px){.book-stage{width:calc(95vw - 180px);max-width:1500px}}
+@media(min-width:769px){
+ .book[data-active-page=home] .header{position:absolute;inset:0 0 auto;background:transparent;border:0;min-height:64px}
+ .book[data-active-page=home] .header .navbar{display:flex;justify-content:flex-end;gap:clamp(12px,2vw,32px);margin-left:auto}
+ .book[data-active-page=home] .header .navbar a{color:var(--white-color);font-size:clamp(15px,1.4vw,21px);margin:0}
+ .book[data-active-page=home] .header #dark-mode{color:var(--white-color);margin-left:24px}
+ .book[data-active-page=home] .header .navbar a:before{background:var(--white-color)}
+ .book-page .home{min-height:100%;padding-top:78px;padding-bottom:24px}
+ .book-page .home .profession-container .home-img img{max-height:88%}
+ .book-page .home-content h1{font-size:clamp(3.4rem,3.7vw,6rem)}
+}
+@media(min-width:769px) and (max-height:650px){
+ .book-page .home-content h1{font-size:3.5rem}
+ .book-page .home-content h3{font-size:2.3rem}
+ .book-page .home-content p{font-size:1.6rem}
+ .home-content .social-media{margin:1.5rem 0}
 }
