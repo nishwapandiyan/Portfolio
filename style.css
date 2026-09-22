@@ -1178,7 +1178,7 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
 /* Use the available desktop height so the wide book has a fuller page proportion. */
 @media(min-width:1024px){
  .book-shell{padding-top:14px;padding-bottom:12px;gap:14px}
- .book-stage{height:max(110dvh,70vw);min-height:650px}
+ .book-stage{width:calc(95vw - 80px);height:max(110dvh,70vw);min-height:650px}
 }
 .page-corner{position:absolute;bottom:0;width:52px;height:52px;border:0;z-index:80;background:linear-gradient(135deg,transparent 49%,#8884 50%,#fff9 75%,#5555);cursor:grab;touch-action:none}
 .corner-next{right:0;border-radius:0 0 10px 0}.corner-back{left:0;transform:scaleX(-1)}
