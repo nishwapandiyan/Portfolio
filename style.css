@@ -1175,6 +1175,11 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
 @media(max-width:450px){.welcome{width:72%}.tech-12{left:12%}.tech-13{left:76%}}
 @media(prefers-reduced-motion:reduce){.welcome img{display:none}.welcome-static{display:block;color:#e2c47c;line-height:1.2;text-align:center}.welcome{filter:none}}
 .page-navigation{height:24px}
+/* Use the available desktop height so the wide book has a fuller page proportion. */
+@media(min-width:1024px){
+ .book-shell{padding-top:14px;padding-bottom:12px;gap:14px}
+ .book-stage{height:calc(100dvh - 64px);min-height:550px}
+}
 .page-corner{position:absolute;bottom:0;width:52px;height:52px;border:0;z-index:80;background:linear-gradient(135deg,transparent 49%,#8884 50%,#fff9 75%,#5555);cursor:grab;touch-action:none}
 .corner-next{right:0;border-radius:0 0 10px 0}.corner-back{left:0;transform:scaleX(-1)}
 .page-corner:disabled{display:none}.page-corner:active{cursor:grabbing}
