@@ -1231,6 +1231,7 @@ body{height:100dvh;min-height:0}
 /* Explicit viewport bounds also cover browsers with different flex sizing behavior. */
 html,body{margin:0;width:100%;height:100%;max-height:100%;overflow:hidden!important;overscroll-behavior:none}
 .book-shell{position:fixed;inset:0;box-sizing:border-box;width:100%;height:100dvh;max-height:100dvh;padding:18px 24px 12px;display:grid;grid-template-rows:minmax(0,1fr) 24px;justify-items:center;align-items:stretch;gap:16px;overflow:hidden}
+.book-shell{grid-template-columns:minmax(0,1fr)}
 .book-stage{width:min(100%,1500px);height:100%;min-height:0!important;max-height:100%;min-width:0;align-self:stretch}
 .book,.sheet{min-height:0;max-height:100%}
 .page-scroll{min-height:0;overflow-y:auto}
