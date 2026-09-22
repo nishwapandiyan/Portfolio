@@ -48,6 +48,11 @@ let busy = false;
 const scrollPositions = pages.map(() => 0);
 let swiper;
 const revealed = new Set();
+const wheel = document.querySelector('.profession-box');
+const wheelWindow = document.createElement('div');
+wheelWindow.className = 'wheel-window';
+wheel.before(wheelWindow);
+wheelWindow.append(wheel);
 function updateControls() {
   document.querySelector('.header').hidden = ['front','back'].includes(pages[position].dataset.page);
   previous.disabled = targetPosition === 0;

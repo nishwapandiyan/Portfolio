@@ -1188,3 +1188,10 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
 .turn-fold{position:absolute;right:0;bottom:0;width:70%;height:85%;z-index:73;pointer-events:none;transform-origin:right bottom;background:linear-gradient(135deg,#0000 44%,#0005 48%,#eee 50%,#fff 55%,#888 60%,#0000 61%);clip-path:polygon(100% 0,100% 100%,0 100%)}
 .turn-fold.reverse{right:auto;left:0;transform-origin:left bottom;rotate:90deg}
 @media(max-width:699px){.book-page .home .profession-container .profession-box{top:290px}.book-page .home .profession-container{min-height:340px}.book-page .home .profession-container .overlay{height:48%}.welcome{font-size:clamp(3.6rem,10vw,6rem)}.cover-art .tech-mark{width:49px;height:49px}.tech-4,.tech-6{left:76%}}
+/* Keep the entire top profession visible throughout the stacked tablet layout. */
+@media(max-width:768px){
+ .book-page .home .profession-container{min-height:360px}
+ .book-page .home .profession-container .profession-box{top:calc(344px * var(--wheel-scale,.65) + 40px)}
+ .wheel-window{position:absolute;inset:0 0 auto;height:250px;overflow:hidden}
+ .book-page .home .profession-container .overlay{height:60%}
+}
