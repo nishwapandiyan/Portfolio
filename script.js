@@ -167,20 +167,6 @@ book.addEventListener('pointerup',e=>{
   if(Math.abs(dx)>65 && Math.abs(dx)>Math.abs(dy)*1.4)goTo(position+(dx<0?1:-1));
 });
 book.addEventListener('pointercancel',()=>gesture=null);
-let wheelTotal=0,lastWheel=0,cooldown=0;
-scroller.addEventListener('wheel',e=>{
-  if(e.target.closest(interactive) || busy || performance.now()<cooldown)return;
-  let node=e.target;
-  while(node && node!==scroller){
-    if(node.scrollHeight>node.clientHeight+2 && ['auto','scroll'].includes(getComputedStyle(node).overflowY)){
-      if((e.deltaY>0 && node.scrollTop+node.clientHeight<node.scrollHeight-2)||(e.deltaY<0 && node.scrollTop>2))return;
-    }node=node.parentElement;
-  }
-  const edge=e.deltaY>0 ? scroller.scrollTop+scroller.clientHeight>=scroller.scrollHeight-2 : scroller.scrollTop<=2;
-  if(!edge){wheelTotal=0;return;}
-  const now=performance.now();if(now-lastWheel>180)wheelTotal=0;lastWheel=now;wheelTotal+=e.deltaY;
-  if(Math.abs(wheelTotal)>100){goTo(position+(wheelTotal>0?1:-1));wheelTotal=0;cooldown=now+1000;}
-},{passive:true});
 const cover=document.querySelector('[data-page="front"]');
 const marks=[...cover.querySelectorAll('.tech-mark')];
 let repelFrame=0,pointer=null,lastMotionTime=0;
