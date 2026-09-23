@@ -1204,6 +1204,11 @@ body.dark{--bg-color:#000;--text-color:#fff;--main-color:#fff;--white-color:#000
  .wheel-window{position:absolute;inset:0 0 auto;height:250px;overflow:hidden}
  .book-page .home .profession-container .overlay{height:60%}
 }
+@media(min-width:250px) and (max-width:300px){
+ .book-page .home .profession-container{min-height:385px}
+ .book-page .home .profession-container .profession-box{top:calc(344px * var(--wheel-scale,.65) + 68px)}
+ .wheel-window{height:278px}
+}
 /* The outer book always fits the browser; long sections scroll inside the sheet. */
 html,body{height:100%;overflow:hidden}
 body{height:100dvh;min-height:0}
